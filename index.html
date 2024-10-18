@@ -1,1 +1,61 @@
-hello
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timeless Watches Company</title>
+</head>
+<body>
+    <h1>Recruitment Form for Timeless Watches Company</h1>
+    <p>Please fill out the form below to apply for a position at Timeless Wathes Company</p>
+
+    <form action="/submit" method="post">
+
+        <fieldset>
+            <legend>Personal Information</legend>
+
+            <label for="fname">First Name:</label><br>
+            <input type="text" id="fname" name="fname" required><br><br>
+
+            <label for="lname">Last Name:</label><br>
+            <input type="text" id="lname" name="lname" required><br><br>
+
+            <label for="email">Email Address:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="phone">Phone Number:</label><br>
+            <input type="tel" id="phone" name="phone" required><br><br>
+
+            <label for="dob">Date of Birth:</label><br>
+            <input type="date" id="dob" name="dob"><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Employment Details</legend>
+
+            <label for="position">Position Applied For:</label><br>
+            <select id="position" name="position" required>
+                <option value="watchmaker">Watchmaker</option>
+                <option value="designer">Designer</option>
+                <option value="sales">Sales Representative</option>
+                <option value="marketing">Marketing Manager</option>
+                <option value="other">Other</option>
+            </select><br><br>
+
+            <label for="experience">Years of Experience:</label><br>
+            <input type="number" id="experience" name="experience" min="0" max="50" required><br><br>
+
+            <label for="availability">Availability:</label><br>
+            <input type="radio" id="fulltime" name="availability" value="fulltime" required>
+            <label for="fulltime">Full-time</label><br>
+            <input type="radio" id="parttime" name="availability" value="parttime" required>
+            <label for="parttime">Part-time</label><br><br>
+
+            <label for="location">Preferred Work Location:</label><br>
+            <input type="text" id="location" name="location" required><br><br>
+        </fieldset>
+
+        <input type="submit" value="Submit Application">
+    </form>
+</body>
+</html>
